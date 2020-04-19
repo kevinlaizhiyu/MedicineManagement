@@ -1,17 +1,14 @@
 import React from 'react';
-import Box from './Redux/Box'
- 
- 
-class App extends React.Component {
-  
-  render(){
-    
-    return(
-      <div>
-        <Box></Box>
-      </div>
-    )
-  }
-}
+import Routers from './router/router'
 
+function App() {
+  return (
+    <div className="App">
+      <Routers></Routers>
+    </div>
+  );
+}
 export default App;
+
+
+

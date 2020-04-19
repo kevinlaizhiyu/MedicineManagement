@@ -1,19 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {Provider} from 'react-redux'
-import store from './Redux/store/store'
+// import 'antd/dist/antd.css'  //引入antd的所有样式文件
+import './common.css'  //清除默认样式
+
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+import store from  '../src/store/store'
+import {Provider} from 'react-redux'
+
+
 ReactDOM.render(
-  
   <Provider store={store}>
-      <App />
-  </Provider>
-   
-  ,
+    <App />
+    </Provider>,
   document.getElementById('root')
 );
 
