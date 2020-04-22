@@ -56,7 +56,7 @@ class HeaderNav extends Component {
   render() { 
     return ( 
       <div className={style.header}>
-        <article>皮噜娃商城后台管理系统</article>
+        <article>后台管理系统demo</article>
         <Dropdown  overlay={this.createMenu(userdata)} className={style.dropdown}>
           <span  className="ant-dropdown-link" onClick={(e)=>{
             console.log(e)
